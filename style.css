@@ -9,7 +9,6 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 header {
@@ -25,6 +24,13 @@ main {
     left: var(--aside_width);
     width: calc(100% - 2 * var(--aside_width));
     height: calc(100% - var(--header_height));
+    justify-content: center;
+    align-items: center;
+}
+
+#main_image {
+    width: 100%;
+
 }
 
 nav ul {
