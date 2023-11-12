@@ -1,3 +1,10 @@
+:root {
+    --aside_width: 230px;
+    --header_height: 100px;
+    --header_color: #304D6D;
+    --main_color: beige;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -6,10 +13,18 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--header_color);
+    height: var(--header_height)
+}
+
+main {
+    background-color: var(--main_color);
+    position: absolute;
+    top: var(--header_height);
+    left: var(--aside_width);
+    width: calc(100% - 2 * var(--aside_width));
+    height: calc(100% - var(--header_height));
 }
 
 nav ul {
@@ -25,7 +40,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-weight: bold;
 }
 
