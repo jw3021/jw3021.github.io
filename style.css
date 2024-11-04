@@ -1,65 +1,78 @@
-:root {
-    --aside_width: 230px;
-    --header_height: 100px;
-    --header_color: #304D6D;
-    --main_color: beige;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: var(--header_color);
-    height: var(--header_height)
-}
-
-main {
-    background-color: var(--main_color);
-    position: absolute;
-    top: var(--header_height);
-    left: var(--aside_width);
-    width: calc(100% - 2 * var(--aside_width));
-    height: calc(100% - var(--header_height));
+    font-family: 'Montserrat', sans-serif;
+    background: url('Assets/WEBSITE FEA JPEG.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    color: #333;
 }
 
-#main_image {
-    width: 100%;
-
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-section {
-    margin: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
+.container {
     text-align: center;
-    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    max-width: 600px;
+    width: 90%;
+}
+
+.profile-photo {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.portfolio-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b0b0b0;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.portfolio-link a:hover {
+    background-color: #8a8a8a;
+}
+
+.contact-info {
     position: fixed;
-    bottom: 0;
-    width: 100%;
+    bottom: 20px;
+    left: 20px;
+    font-size: 0.9rem;
+    color: #333;
+    opacity: 0.9;
+    text-align: left;
+}
+
+.contact-info p {
+    margin: 0;
+    margin-top: 5px;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
